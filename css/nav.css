@@ -1,0 +1,54 @@
+/*Top navigation -----------------------*/
+
+#topNav {
+	background-color: #f8f8f8;
+	width: 100%;
+	overflow: auto;
+}
+
+.topNav {
+	display: block;
+	height: 100%;
+	padding-left: 0px;
+}
+
+.topNav-item {
+	display: inline-block;
+	height: 100%;
+	margin: 0 20px;
+}
+
+.topNav-item-element {
+	display: block;
+	color: #5e5e5e;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.topNav-item-element:hover, .topNav-active {
+	color: white !important;
+	background-color: #8c8c8c;	
+}
+
+/*Left navigation -----------------------*/
+#leftNav {
+	position: fixed;
+	width: 140px;
+	left: 20px;
+	top: 200px;
+	text-align: center;
+	cursor: pointer;	
+}
+.leftNav-disabled {
+	display: none;
+}
+.list-group-item {
+	list-style-type: none;
+}
+#leftNav .list-group-item:hover, .leftNav-active{
+	background-color: #7e7ee8;
+}
+#deleteCancel, #editCancel {
+	display: none;
+}

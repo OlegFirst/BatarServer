@@ -1,0 +1,80 @@
+#imageLoadView, #fileLoadView{
+	display: none;
+}
+.hover{
+	position: fixed;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid lightgrey;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 5;
+	display: none;
+}
+.loader{
+	background-color: white;
+	border: 1px solid lightgrey;
+	position: fixed;
+	width: 500px;
+	min-height: 100px;
+	overflow: auto;
+	left: calc(50% - 200px);
+	top: 100px;
+	box-shadow: 5px 5px 5px lightgrey;
+	z-index: 10;
+}
+.loader-list{
+	list-style-type: none;
+}
+.loader .cancel{
+	display: block;
+	margin: 10px auto;
+	width: 80px;
+	float: left;
+}
+.loader .ok{
+	display: block;
+	margin: 10px auto;
+	width: 80px;
+	float: right;
+}
+
+.loader-list-element{
+	cursor: pointer;
+}
+.loader-list-element:hover{
+	color: blue;
+}
+
+.photos-list-imageOuter{
+	position: relative;
+	cursor: pointer;
+}
+.photos-list-image{
+	width: 50px;
+	height: auto;
+}
+.photos-list-caption{
+	position: absolute;
+	left: 100px;
+	bottom: 120px;
+}
+.imageSelected{
+	border: 1px solid;
+}
+.fileSelected{
+	color: green !important;
+	font-weight: bold;
+}
+
+.photos-list-imageOuter:hover>.photos-list-caption{
+	color: blue;
+}
+.photos-list-element:hover{
+	color: blue;
+	cursor: pointer;
+}
+.photos-list-image:hover{
+	cursor: pointer;
+}
